@@ -1,0 +1,103 @@
+body{
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con transparencia del 50% */
+    z-index: -1;
+  }
+
+  /* Eliminaacion de estilos por defecto de enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+}
+  
+
+/* Estilo para los encabezados y títulos destacados */
+h1, h2, h3 {
+    background: -webkit-linear-gradient(to right, #62e1df, #2f9acc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #62e1df, #2f9acc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto Condensed", sans-serif; /* Tipografía audaz y llamativa */    
+}
+
+h4, h5, h6{
+  background: -webkit-linear-gradient(to right, #42e4b9, #0ed13b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #42e4b9, #0ed13b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto Condensed", sans-serif; /* Tipografía audaz y llamativa */
+}
+  
+  /* Resto del código CSS */
+  /* Estilo para el texto principal y párrafos */
+  p, .text {
+    color: #FFFFFF; /* Blanco o tono claro contrastante */
+    font-family: "Open Sans", sans-serif; /* Tipografía legible y elegante */
+  }
+  
+  /* Estilo para el texto de resaltado o destacado */
+  .highlight {
+    color: #26D0CE; /* Color de inicio del degradado */
+    font-weight: bold; /* Tipografía en negrita */
+  }
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1A2980; /* Color de fondo de la pista de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #26D0CE; /* Color del pulgar (barra) de la barra de desplazamiento */
+    border-radius: 5px; /* Radio de borde del pulgar de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0df186; /* Color del pulgar (barra) de la barra de desplazamiento al pasar el cursor */
+  }
+
+  /* botones de login y registro */
+.btl{
+    background-color: #09cb70;
+    color: #FFFFFF;
+}
+.btl:hover{
+    background-color: #12ea85;
+    color:#1A2980;
+}
+.btr{
+    background-color: #0e9795;
+    color: #FFFFFF;
+}
+.btr:hover{
+    background-color: #21ece9;
+    color:#1A2980;
+}
+
+/* formulario de login y registro */
+.fr{
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor "0.5" para cambiar la opacidad */
+}
+  
+
+/* items de lista de productos*/
+.porduct_item{
+  background: -webkit-linear-gradient(to right, #2d836c, #27b247); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2d836c, #27b247); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto Condensed", sans-serif; /* Tipografía audaz y llamativa */
+}

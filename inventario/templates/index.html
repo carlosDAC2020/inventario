@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+    
+  <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <h1 class="display-5 fw-bold  lh-1 text-body-emphasis mb-3">Gestiona tu negocio de manera eficiente y sencilla</h1>
+        <p class="lead col-lg-10 fs-4">Inventory es una plataforma integral diseñada para ayudarte a mantener un control total sobre el inventario, cuentas, presupuesto y estadísticas de tu negocio, todo en un solo lugar.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'img/heder_image.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start ">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Inicia sesion o registrate ahora </h1>
+        <p class="col-lg-10 fs-4">¡Regístrate ahora y lleva tu negocio al siguiente nivel con Inventory! Nuestra plataforma intuitiva y completa te ayudará a simplificar la gestión de tu inventario, cuentas, presupuesto y estadísticas. Únete a nuestra comunidad de empresarios exitosos y descubre cómo puedes optimizar tus operaciones comerciales en un solo lugar.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form action="{% url 'users:login' %}" method="post" class="p-4 p-md-5 text-white rounded-3  fr">
+          {% csrf_token %}
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control bg-secondary border-0 text-white" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Usename</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control bg-secondary border-0 text-white" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input class="text-white" type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          
+          <button class="w-100 btn btn-lg  mb-3 btl" type="submit" >Login</button>
+          <a href="{% url 'users:signup' %}" class="w-100 btn btn-lg  mb-3 btr">Registrarme
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-1" id="featured-3">
+    <h2 class="pb-2 border-bottom">Columns with icons</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
